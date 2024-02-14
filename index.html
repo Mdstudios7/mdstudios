@@ -25,27 +25,9 @@
       <script script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script>
-   window.addEventListener('load', function() {
-    // Hide loading overlay when page fully loaded
-    document.querySelector('.loading-overlay').classList.remove('active');
-});
-
-// Show loading overlay when navigating to a new page
-document.querySelectorAll('a').forEach(function(link) {
-    link.addEventListener('click', function() {
-        document.querySelector('.loading-overlay').classList.add('active');
-    });
-});
-
-</script>
    </head>
 <!-- Include the navbar in your HTML pages -->
-<script>
-   $(function(){
-      $("#navbar-container").load("navbar.html");
-   });
-</script>
+
 
    <!-- body -->
    <body class="main-layout">
@@ -54,7 +36,55 @@ document.querySelectorAll('a').forEach(function(link) {
       <!-- loader  -->
       <!-- end loader -->
       <!-- header -->
-      <div id="navbar-container"></div>
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class=" col-md-2 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html"><img src="images/1st.png" alt="#" /></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-8 col-sm-12">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                              <a class="nav-link" href="./">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="about.html">About</a>
+                           </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Services
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                               <a class="dropdown-item" href="./fintech.html">Financial Services</a>
+                               <a class="dropdown-item" href="./cyber_security.html">Cyber Security</a>
+                               <a class="dropdown-item" href="./dev.html">Web Development</a>
+                           </div>
+                       </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="work.html">Product</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Connect</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
       
       <!-- end header inner -->
       <!-- end header -->
@@ -98,63 +128,7 @@ document.querySelectorAll('a').forEach(function(link) {
                               </div>
                            </div>
                            <!-- second slide -->
-                           <div class="carousel-item">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div  class="col-md-5">
-                                       <div class="board">
-                                          <div class="link_btn">
-                                             <a class="read_more" href="Javascript:void(0)">
-                                            We make Digital (and Magical).<span></span></a>
-                                          </div>
-                                          <h3>
-                                             Branding.<br> Products.<br> Experiences.
-                                          </h3>
-                                          <div class="link_btn">
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="banner_img">
-                                          <figure><img class="img_responsive" src="images/banner-01.jpg"></figure>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- third slide-->
-                           <div class="carousel-item">
-                              <div class="carousel-caption relative">
-                                 <div class="row d_flex">
-                                    <div  class="col-md-5">
-                                       <div class="board">
-                                          <br>
-                                          <div class="link_btn">
-                                             <a class="read_more" href="Javascript:void(0)">
-                                            We make Digital (and Magical).<span></span></a>
-                                          </div>
-                                          <h3>
-                                             Branding.<br> Products.<br> Experiences.
-                                          </h3>
-                                          <div class="link_btn">
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                       <div class="banner_img">
-                                          <figure><img class="img_responsive" src="images/banner-02.jpg"></figure>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+                           
       <!-- end banner -->
       <!-- our class -->
       <div class="class">
